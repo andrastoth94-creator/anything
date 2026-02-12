@@ -96,25 +96,25 @@ export default function HomePage() {
   const galleryImages = [
     {
       id: 1,
-      url: "https://raw.createusercontent.com/e0380093-49d8-4303-b4fe-69ee047ce62e/",
+      url: "/anything/images/exterior-before.jpg",
       alt: "Külső mosás előtt",
       label: "ELŐTTE",
     },
     {
       id: 2,
-      url: "https://raw.createusercontent.com/5b393e32-2b33-4cf6-b44e-b5229fa6cb6d/",
+      url: "/anything/images/exterior-after.jpg",
       alt: "Külső mosás után",
       label: "UTÁNA",
     },
     {
       id: 3,
-      url: "https://raw.createusercontent.com/f78b1697-2f7f-45c9-bfb1-cd632df715c9/",
+      url: "/anything/images/interior-before.jpg",
       alt: "Belső takarítás előtt",
       label: "ELŐTTE",
     },
     {
       id: 4,
-      url: "https://raw.createusercontent.com/24a94079-9919-477e-94dd-75f97ae760bb/",
+      url: "/anything/images/interior-after.jpg",
       alt: "Belső takarítás után",
       label: "UTÁNA",
     },
@@ -141,7 +141,7 @@ export default function HomePage() {
         {/* Cinematic Car Wash Background */}
         <div className="absolute inset-0">
           <img
-            src="https://raw.createusercontent.com/a514c38e-73d9-4166-9736-b481f6729a9d/"
+            src="/anything/images/polishing.jpg"
             alt="Professional Car Detailing"
             className="w-full h-full object-cover"
           />

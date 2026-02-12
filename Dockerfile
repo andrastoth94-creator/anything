@@ -18,6 +18,10 @@ COPY apps/web ./
 # Build the application
 RUN bun run build
 
+# Fix build structure - move index.html from anything/ to root
+RUN mv build/client/anything/index.html build/client/index.html && \
+    rmdir build/client/anything
+
 # Stage 2: Serve with Nginx
 FROM nginx:alpine
 
