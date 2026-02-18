@@ -1,38 +1,24 @@
-# Multi-stage Dockerfile for React Router app
+FROM oven/bun:1
 
-# Stage 1: Build the application
-FROM oven/bun:1 AS builder
+# Install nginx
+RUN apt-get update && apt-get install -y nginx inotify-tools && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
-
-# Copy package files
-COPY apps/web/package.json apps/web/bun.lock* ./apps/web/
-
-# Install dependencies
 WORKDIR /app/apps/web
+
+# Copy package files and install dependencies
+COPY apps/web/package.json apps/web/bun.lock* ./
 RUN bun install
 
 # Copy source code
 COPY apps/web ./
 
-# Build the application
-RUN bun run build
-
-# Fix build structure - move index.html from anything/ to root
-RUN mv build/client/anything/index.html build/client/index.html && \
-    rmdir build/client/anything
-
-# Stage 2: Serve with Nginx
-FROM nginx:alpine
-
-# Copy custom nginx configuration
+# Copy nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy built files from builder stage
-COPY --from=builder /app/apps/web/build/client /usr/share/nginx/html
+# Copy and prepare entrypoint
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 
-# Expose port 80
 EXPOSE 80
 
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["/docker-entrypoint.sh"]

@@ -37,8 +37,8 @@ docker compose up --build
 The site will be available at: **http://localhost:8080**
 
 **Features:**
-- 🐳 Production-like environment
-- 📦 Consistent builds across systems
+- 🐳 Consistent environment across systems
+- 👀 Auto-rebuilds when you save files (~7 seconds)
 - 🔒 Isolated from local dependencies
 
 **Stop the container:**
@@ -46,18 +46,14 @@ The site will be available at: **http://localhost:8080**
 docker compose down
 ```
 
-**Rebuild after making changes:**
+**Workflow:**
 
-You can rebuild the app inside the running container without rebuilding the entire Docker image:
+1. Start the container with `docker compose up --build`
+2. Edit files in `apps/web/src/` — the container detects changes and rebuilds automatically
+3. Wait for the rebuild to complete (watch `docker compose logs -f` for `✓ built in Xs`)
+4. Refresh your browser
 
-```bash
-# Make your changes to the code, then rebuild
-docker compose exec web bun run build
-
-# The container will automatically serve the new build
-```
-
-This is much faster than `docker compose up --build` because it only rebuilds the app, not the entire container.
+> **Note:** The site will return a 500 error during the ~7 second rebuild. This is expected — just refresh once the build finishes.
 
 ## 🏗️ Building for Production
 
@@ -125,7 +121,8 @@ anything/
 │       └── static.yml          # GitHub Pages deployment
 ├── docker-compose.yml          # Docker Compose configuration
 ├── Dockerfile                  # Docker build instructions
-├── nginx.conf                  # Nginx config for production
+├── docker-entrypoint.sh        # Container startup: build → nginx → file watcher
+├── nginx.conf                  # Nginx web server configuration
 └── README.md                   # This file
 ```
 
@@ -135,11 +132,10 @@ All commands should be run from the project root:
 
 | Command | Description |
 |---------|-------------|
-| `docker compose up` | Start development server |
-| `docker compose up --build` | Rebuild Docker image and start (first time only) |
-| `docker compose exec web bun run build` | Rebuild app inside running container (fast!) |
-| `docker compose down` | Stop the server |
-| `docker compose logs -f` | View server logs |
+| `docker compose up --build` | Build image and start (first time, or after Dockerfile changes) |
+| `docker compose up` | Start container (subsequent times) |
+| `docker compose down` | Stop the container |
+| `docker compose logs -f` | Watch logs (see rebuild progress) |
 | `docker compose exec web sh` | Open shell inside container |
 
 ## 🔧 Configuration
@@ -195,8 +191,9 @@ Variables prefixed with `NEXT_PUBLIC_` are available in the client bundle.
 ### Edit the Landing Page
 
 1. Open `apps/web/src/app/page.jsx`
-2. Make your changes
-3. Save the file - changes will auto-reload in development mode
+2. Make your changes and save
+3. The container detects the change and automatically rebuilds (~7 seconds)
+4. Refresh your browser once the build completes
 
 ### Add or Replace Images
 
@@ -219,10 +216,7 @@ The app currently uses **external images** hosted online (from createusercontent
    url: "/images/your-image.jpg",
    ```
 
-3. **Rebuild the app:**
-   ```bash
-   docker compose exec web bun run build
-   ```
+3. **Save the file** — the container will auto-rebuild and serve the updated image
 
 **Supported formats:**
 - `.jpg`, `.jpeg` - Photos
@@ -240,8 +234,7 @@ cp before-detailing.jpg apps/web/public/images/
 # Find: url: "https://raw.createusercontent.com/e0380093..."
 # Replace with: url: "/images/before-detailing.jpg"
 
-# 3. Rebuild
-docker compose exec web bun run build
+# 3. Save — the container will auto-rebuild
 ```
 
 ### Update Styles
@@ -252,12 +245,11 @@ docker compose exec web bun run build
 
 ### Deploy Your Changes
 
-1. Make your changes to the code (files are auto-synced to container)
-2. Rebuild inside container: `docker compose exec web bun run build`
-3. Verify everything works at http://localhost:8080
-4. Commit your changes: `git add . && git commit -m "Your message"`
-5. Push to GitHub: `git push`
-6. Deploy via GitHub Actions (see Deployment section)
+1. Make your changes to the code — the container auto-rebuilds on save
+2. Verify everything works at http://localhost:8080/anything/
+3. Commit your changes: `git add . && git commit -m "Your message"`
+4. Push to GitHub: `git push`
+5. Deploy via GitHub Actions (see Deployment section)
 
 ## 📚 Tech Stack
 
