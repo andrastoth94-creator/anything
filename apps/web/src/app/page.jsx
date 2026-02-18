@@ -23,8 +23,8 @@ export default function HomePage() {
       subtitle: "Külső tisztítás",
       price: "20.000",
       features: [
-        "Karcmentes mosás",
-        "Felnik, karosszériaelemek és gumifelületek ápolása tisztítása",
+        "Karcmentes fosás",
+        "Felniket, karosszériaelemek és gumifelületek ápolása tisztítása",
         "Bogár/rovar maradványok takarítása",
         "Gyorswax a fényes, védett felületért",
       ],
