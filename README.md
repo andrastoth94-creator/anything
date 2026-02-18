@@ -34,7 +34,7 @@ No need to install Bun or Node.js - everything runs in the container!
 docker compose up --build
 ```
 
-The site will be available at: **http://localhost:8080**
+The site will be available at: **http://localhost:8080/anything/**
 
 **Features:**
 - 🐳 Consistent environment across systems
@@ -68,7 +68,7 @@ This automatically:
 - Builds the application with Bun
 - Creates optimized static files
 - Serves them with Nginx (production web server)
-- Makes the site available at **http://localhost:8080**
+- Makes the site available at **http://localhost:8080/anything/**
 
 ## 📦 Deployment to GitHub Pages
 
