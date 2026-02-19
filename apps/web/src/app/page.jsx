@@ -24,7 +24,7 @@ export default function HomePage() {
       price: "20.000",
       features: [
         "Karcmentes fosás",
-        "Felniket, karosszériaelemek és gumifelületek ápolása tisztítása",
+        "Felniket, kfaszarosszériaelemek és gumifelületek ápolása tisztítása",
         "Bogár/rovar maradványok takarítása",
         "Gyorswax a fényes, védett felületért",
       ],
