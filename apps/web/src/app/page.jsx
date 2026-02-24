@@ -20,7 +20,7 @@ export default function HomePage() {
     {
       icon: <Sparkles className="w-8 h-8" />,
       name: "Flash Shine",
-      subtitle: "Külső tisztítás",
+      subtitle: "Külső tisztítássss",
       price: "20.000",
       features: [
         "Karcmentes fosás",
