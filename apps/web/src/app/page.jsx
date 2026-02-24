@@ -118,6 +118,18 @@ export default function HomePage() {
       alt: "Belső takarítás után",
       label: "UTÁNA",
     },
+    {
+      id: 5,
+      url: "/anything/images/roka.jpg",
+      alt: "Róka",
+      label: "Valamikor",
+    },
+     {
+      id: 6,
+      url: "/anything/images/roka.jpg",
+      alt: "Róka",
+      label: "Valamikor",
+    },
   ];
 
   return (
