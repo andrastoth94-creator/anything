@@ -32,7 +32,7 @@ export default function HomePage() {
     {
       icon: <Droplets className="w-8 h-8" />,
       name: "Inner Glow",
-      subtitle: "Belső tisztítás",
+      subtitle: "Belső fosás",
       price: "25.000",
       features: [
         "Porszívózás, textil felületek tisztítása",
