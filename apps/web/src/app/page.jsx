@@ -178,7 +178,7 @@ export default function HomePage() {
               letterSpacing: "-0.03em",
             }}
           >
-            NDRS
+            ndrs
           </motion.h1>
 
           <motion.p
@@ -550,7 +550,7 @@ export default function HomePage() {
 
           <div className="border-t border-gray-800 pt-8 text-center">
             <p className="text-gray-600 text-sm font-light">
-              © 2026 NDRS - Prémium Mobil Autókozmetika. Minden jog fenntartva.
+              © 2026 ndrs - Prémium Mobil Autókozmetika. Minden jog fenntartva.
             </p>
           </div>
         </div>
