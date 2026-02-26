@@ -20,11 +20,11 @@ export default function HomePage() {
     {
       icon: <Sparkles className="w-8 h-8" />,
       name: "Flash Shine",
-      subtitle: "Külső tisztítássss",
+      subtitle: "Külső tisztítás",
       price: "20.000",
       features: [
-        "Karcmentes fosás",
-        "Felniket, kfaszarosszériaelemek és gumifelületek ápolása tisztítása",
+        "Karcmentes mosás",
+        "Felniket, karosszériaelemek és gumifelületek ápolása tisztítása",
         "Bogár/rovar maradványok takarítása",
         "Gyorswax a fényes, védett felületért",
       ],
@@ -32,7 +32,7 @@ export default function HomePage() {
     {
       icon: <Droplets className="w-8 h-8" />,
       name: "Inner Glow",
-      subtitle: "Belső fosás",
+      subtitle: "Belső mosás",
       price: "25.000",
       features: [
         "Porszívózás, textil felületek tisztítása",
@@ -121,14 +121,14 @@ export default function HomePage() {
     {
       id: 5,
       url: "/anything/images/roka.jpg",
-      alt: "Róka",
-      label: "Valamikor",
+      alt: "Külső mosás előtt",
+      label: "ELŐTTE",
     },
      {
       id: 6,
       url: "/anything/images/roka.jpg",
-      alt: "Róka",
-      label: "Valamikor",
+      alt: "Külső mosás után",
+      label: "UTÁNA",
     },
   ];
 
@@ -196,8 +196,7 @@ export default function HomePage() {
             transition={{ duration: 1, delay: 0.8 }}
             className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12 font-light"
           >
-            Professzionális autókozmetikai szolgáltatás ott, ahol Önnek a
-            legkényelmesebb
+            Professzionális autókozmetikai szolgáltatás ott, ahol neked a legkényelmesebb.
           </motion.p>
 
           <motion.div
@@ -214,7 +213,7 @@ export default function HomePage() {
               whileTap={{ scale: 0.95 }}
               className="px-12 py-4 bg-white text-black font-semibold text-lg tracking-tight rounded-full hover:shadow-2xl transition-all duration-300"
             >
-              Foglaljon most
+              Foglalj most
             </motion.a>
             <motion.a
               href="#csomagok"
@@ -246,11 +245,10 @@ export default function HomePage() {
             </h2>
             <div className="w-20 h-1 bg-gray-300 mx-auto mb-12 rounded-full"></div>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light">
-              Mobil autókozmetikai szolgáltatás, prémium minőségben. Mi
-              elvégezzük a munkát ott, ahol Önnek a legkényelmesebb.
-              Professzionális eszközökkel, tapasztalattal és rugalmassággal
-              gondoskodunk autójáról, hogy Ön az idejét arra fordíthassa, ami
-              igazán számít.
+              Mobil autókozmetika prémium színvonalon, a te idődhöz igazítva. 
+              Amíg mi dolgozunk, te a számodra fontos dolgokra koncentrálhatsz.
+              Autód tapasztalt, megbízható kezekben van – precízen, kompromisszumok nélkül.
+
             </p>
           </motion.div>
         </div>
@@ -466,10 +464,10 @@ export default function HomePage() {
             className="text-4xl md:text-6xl font-bold mb-6 text-white tracking-tight"
             style={{ letterSpacing: "-0.02em" }}
           >
-            Készen áll a prémium élményre?
+            Készen állsz a prémium élményre?
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 font-light">
-            Foglaljon időpontot még ma és tapasztalja meg a különbséget!
+            Foglalj időpontot még ma és tapasztald meg a különbséget!
           </p>
           <motion.a
             href="https://calendar.google.com/calendar/u/0/r/week/2026/2/9?hl=hu"
@@ -479,7 +477,7 @@ export default function HomePage() {
             whileTap={{ scale: 0.95 }}
             className="inline-block px-12 py-5 bg-white text-black font-semibold text-xl tracking-tight rounded-full hover:shadow-2xl transition-all duration-300"
           >
-            Időpontfoglalás
+            Foglalj most
           </motion.a>
         </motion.div>
       </section>
