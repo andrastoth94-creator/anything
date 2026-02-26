@@ -24,7 +24,7 @@ export default function HomePage() {
       price: "20.000",
       features: [
         "Karcmentes mosás",
-        "Felniket, karosszériaelemek és gumifelületek ápolása tisztítása",
+        "Felnik, karosszériaelemek és gumifelületek ápolása tisztítása",
         "Bogár/rovar maradványok takarítása",
         "Gyorswax a fényes, védett felületért",
       ],
@@ -36,14 +36,14 @@ export default function HomePage() {
       price: "25.000",
       features: [
         "Porszívózás, textil felületek tisztítása",
-        "Bőr és Műanyag felületek tisztítása és ápolása",
+        "Bőr és műanyag felületek tisztítása és ápolása",
         "Ablakok belső tisztítása",
       ],
     },
     {
       icon: <Car className="w-8 h-8" />,
       name: "Total Care",
-      subtitle: "Külső & Belső",
+      subtitle: "Külső & belső",
       price: "40.000",
       features: [
         "Teljes külső mosás + wax + gumiápolás",
@@ -59,7 +59,7 @@ export default function HomePage() {
       price: "145.000",
       features: [
         "4 alkalmas autókozmetikai bérlet",
-        "Külső/Belső takarítás",
+        "Külső/belső takarítás",
         "60 napig felhasználható",
       ],
     },
@@ -120,13 +120,13 @@ export default function HomePage() {
     },
     {
       id: 5,
-      url: "/anything/images/roka.jpg",
+      url: "/anything/images/exteriorsuz.jpg",
       alt: "Külső mosás előtt",
       label: "ELŐTTE",
     },
      {
       id: 6,
-      url: "/anything/images/roka.jpg",
+      url: "/anything/images/sss.jpg",
       alt: "Külső mosás után",
       label: "UTÁNA",
     },
