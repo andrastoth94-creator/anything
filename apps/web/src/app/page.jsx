@@ -102,7 +102,7 @@ export default function HomePage() {
     },
     {
       id: 2,
-      url: "/anything/images/exterior-after.jpg",
+      url: "/anything/images/exterior-after.jpeg",
       alt: "Külső mosás után",
       label: "UTÁNA",
     },
@@ -120,7 +120,7 @@ export default function HomePage() {
     },
     {
       id: 5,
-      url: "/anything/images/exteriorsuz.jpg",
+      url: "/anything/images/exteriorsuz.jpeg",
       alt: "Külső mosás előtt",
       label: "ELŐTTE",
     },
