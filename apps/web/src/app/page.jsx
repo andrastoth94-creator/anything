@@ -206,7 +206,7 @@ export default function HomePage() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <motion.a
-              href="https://calendar.google.com/calendar/u/0/r/week/2026/2/9?hl=hu"
+              href="https://calendly.com/andras-toth94/idopontok"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -470,7 +470,7 @@ export default function HomePage() {
             Foglalj időpontot még ma és tapasztald meg a különbséget!
           </p>
           <motion.a
-            href="https://calendar.google.com/calendar/u/0/r/week/2026/2/9?hl=hu"
+            href="https://calendly.com/andras-toth94/idopontok"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -522,7 +522,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <a
-                    href="https://calendar.google.com/calendar/u/0/r/week/2026/2/9?hl=hu"
+                    href="https://calendly.com/andras-toth94/idopontok"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
