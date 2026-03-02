@@ -84,7 +84,7 @@ export default function HomePage() {
     {
       question: "Hogyan tudok időpontot foglalni?",
       answer:
-        'A „Időpontfoglalás" gombra kattintva VAGY e-mailben VAGY telefonon.',
+        'A „Foglalj most" gombra kattintva VAGY e-mailben VAGY telefonon.',
     },
     {
       question: "Milyen területen dolgozol?",
