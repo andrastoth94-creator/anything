@@ -96,37 +96,37 @@ export default function HomePage() {
   const galleryImages = [
     {
       id: 1,
-      url: "/anything/images/exterior-before.jpg",
+      url: "/images/exterior-before.jpg",
       alt: "Külső mosás előtt",
       label: "ELŐTTE",
     },
     {
       id: 2,
-      url: "/anything/images/exterior-after.jpeg",
+      url: "/images/exterior-after.jpeg",
       alt: "Külső mosás után",
       label: "UTÁNA",
     },
     {
       id: 3,
-      url: "/anything/images/interior-before.jpg",
+      url: "/images/interior-before.jpg",
       alt: "Belső takarítás előtt",
       label: "ELŐTTE",
     },
     {
       id: 4,
-      url: "/anything/images/interior-after.jpg",
+      url: "/images/interior-after.jpg",
       alt: "Belső takarítás után",
       label: "UTÁNA",
     },
     {
       id: 5,
-      url: "/anything/images/exteriorsuz.jpeg",
+      url: "/images/exteriorsuz.jpeg",
       alt: "Külső mosás előtt",
       label: "ELŐTTE",
     },
      {
       id: 6,
-      url: "/anything/images/sss.jpg",
+      url: "/images/sss.jpg",
       alt: "Külső mosás után",
       label: "UTÁNA",
     },
@@ -153,7 +153,7 @@ export default function HomePage() {
         {/* Cinematic Car Wash Background */}
         <div className="absolute inset-0">
           <img
-            src="/anything/images/polishing.jpg"
+            src="/images/polishing.jpg"
             alt="Professional Car Detailing"
             className="w-full h-full object-cover"
           />
