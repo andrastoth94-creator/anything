@@ -20,7 +20,7 @@ export default function HomePage() {
     {
       icon: <Sparkles className="w-8 h-8" />,
       name: "Flash Shine",
-      subtitle: "Külső tisztítás",
+      subtitle: "Külső mosás",
       price: "20.000",
       features: [
         "Karcmentes mosás",
@@ -32,7 +32,7 @@ export default function HomePage() {
     {
       icon: <Droplets className="w-8 h-8" />,
       name: "Inner Glow",
-      subtitle: "Belső mosás",
+      subtitle: "Belső takarítás",
       price: "25.000",
       features: [
         "Porszívózás, textil felületek tisztítása",
