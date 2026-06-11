@@ -96,37 +96,37 @@ export default function HomePage() {
   const galleryImages = [
     {
       id: 1,
-      url: "/images/exterior-before.jpg",
+      url: "/images/1.jpeg",
       alt: "Külső mosás előtt",
       label: "ELŐTTE",
     },
     {
       id: 2,
-      url: "/images/exterior-after.jpeg",
+      url: "/images/2.jpeg",
       alt: "Külső mosás után",
       label: "UTÁNA",
     },
     {
       id: 3,
-      url: "/images/interior-before.jpg",
+      url: "/images/3.jpeg",
       alt: "Belső takarítás előtt",
       label: "ELŐTTE",
     },
     {
       id: 4,
-      url: "/images/interior-after.jpg",
+      url: "/images/4.jpeg",
       alt: "Belső takarítás után",
       label: "UTÁNA",
     },
     {
       id: 5,
-      url: "/images/exteriorsuz.jpeg",
+      url: "/images/5.jpeg",
       alt: "Külső mosás előtt",
       label: "ELŐTTE",
     },
      {
       id: 6,
-      url: "/images/sss.jpg",
+      url: "/images/6.jpeg",
       alt: "Külső mosás után",
       label: "UTÁNA",
     },
