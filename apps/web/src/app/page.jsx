@@ -142,6 +142,18 @@ export default function HomePage() {
       alt: "Belső takarítás után",
       label: "UTÁNA",
     },
+    {
+      id: 9,
+      url: "/images/9.jpeg",
+      alt: "Külső mosás előtt",
+      label: "ELŐTTE",
+    },
+    {
+      id: 10,
+      url: "/images/10.jpeg",
+      alt: "Külső mosás után",
+      label: "UTÁNA",
+    },
   ];
 
   return (
