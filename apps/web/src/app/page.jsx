@@ -26,7 +26,6 @@ export default function HomePage() {
         "Karcmentes mosás",
         "Felnik, karosszériaelemek és gumifelületek ápolása tisztítása",
         "Bogár/rovar maradványok takarítása",
-        "Gyorswax a fényes, védett felületért",
       ],
     },
     {
