@@ -130,6 +130,18 @@ export default function HomePage() {
       alt: "Külső mosás után",
       label: "UTÁNA",
     },
+    {
+      id: 7,
+      url: "/images/7.jpeg",
+      alt: "Belső takarítás előtt",
+      label: "ELŐTTE",
+    },
+    {
+      id: 8,
+      url: "/images/8.jpeg",
+      alt: "Belső takarítás után",
+      label: "UTÁNA",
+    },
   ];
 
   return (
@@ -540,7 +552,7 @@ export default function HomePage() {
               <div className="space-y-2 text-gray-500 text-sm font-light">
                 <p className="flex items-center justify-center md:justify-start gap-2">
                   <MapPin className="w-4 h-4" />
-                  Budapest és környéke
+                  0630 978 2818
                 </p>
               </div>
             </div>
