@@ -21,10 +21,10 @@ export default function HomePage() {
       icon: <Sparkles className="w-8 h-8" />,
       name: "Flash Shine",
       subtitle: "Külső mosás",
-      price: "20.000",
+      price: "10.000",
       features: [
         "Karcmentes mosás",
-        "Felnik, karosszériaelemek és gumifelületek ápolása tisztítása",
+        "Felnik, karosszériaelemek és gumifelületek tisztítása",
         "Bogár/rovar maradványok takarítása",
       ],
     },
